@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .email-wrapper {
+
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+    }
+
+    .email-header {
+        background-color: #234fc7;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .email-header h1 {
+        color: #fff;
+        margin: 0;
+    }
+
+    .email-body {
+        padding: 20px;
+    }
+
+    .email-footer {
+        background-color: #e0dcdc;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .email-footer p {
+        color: #333;
+        margin: 0;
+    }
+</style>
+
+<body>
+    <div class="email-wrapper">
+        <div class="email-header">
+            <h1>Welcome To my App</h1>
+        </div>
+        <div class="email-body">
+            <h2>Hi <%= user.name %>,
+            </h2>
+
+            <p>Thank you for registering with us. Please confirm your registration, your confirmation code is </p>
+
+            <span class="otp">
+                <%=activationCode %>,
+            </span>
+
+            <p>Regards,</p>
+
+        </div>
+        <div class="email-footer">
+
+            <p>Contact for any queries</p>
+
+            <p>© 2020 My App. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

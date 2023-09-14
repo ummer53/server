@@ -1,0 +1,11 @@
+# Example GET Request
+
+# Example POST Request
+POST  http://localhost:3001/api/v1/register
+
+
+{
+    "username": "test",
+    "password": "test"
+}
+
