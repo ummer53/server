@@ -25,11 +25,11 @@ app.use(
 );
 
 //routes
-app.use('/api/v1', userRoutes);
+app.use('/api/v1/**', userRoutes);
 
 app.use(express.static('build'));
 app.get('*', (req, res) => {
-  res.sendFile(__dirname + '/build/index.html');
+	res.sendFile(__dirname + '/build/index.html');
 });
 
 app.get('/test', (_req: Request, res: Response, next: NextFunction) => {
